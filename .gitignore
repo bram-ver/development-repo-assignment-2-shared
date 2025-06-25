@@ -161,3 +161,4 @@ cython_debug/
 
 # Plots
 *.pdf
+.ipynb_checkpoints/notebook_unit1-checkpoint.ipynb
