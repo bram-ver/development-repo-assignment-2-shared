@@ -17,6 +17,9 @@ def get_wf(wf):
 
 
 def discrete_FT(time_series, amplitudes):
+    """
+    Calculates the discrete Fourier Transform of a time series.
+    """
     freq = np.fft.rfftfreq(len(time_series), d=(time_series[1] - time_series[0]))
     amp = np.fft.rfft(amplitudes)
     transformed = pd.DataFrame({"frequency": freq, "amplitude": np.abs(amp)})
