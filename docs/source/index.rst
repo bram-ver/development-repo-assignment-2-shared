@@ -8,6 +8,8 @@ ssd2025_Emilio_Bram documentation
 
 This documentation and the accompanying package have been created as part of the Scientific Software Development offered by the Scientific Software Center at Heidelberg University.
 
+The package contains a collection of functions and classes that can be used to import, export and plot scientific data as well as performing transformations on the data.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

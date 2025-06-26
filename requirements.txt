@@ -14,3 +14,4 @@ sphinxcontrib-napoleon
 pytest
 pytest-sugar
 pytest-cov
+sphinx-wagtail-theme
