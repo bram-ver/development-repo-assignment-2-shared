@@ -1,4 +1,4 @@
-# from pathlib import Path
+from pathlib import Path
 
 
 def read_nump_data(path, name, skip=1):
@@ -12,8 +12,8 @@ def read_nump_data(path, name, skip=1):
     """
     import numpy as np
 
-    # if not isinstance(path, (str, Path)):
-    #    raise TypeError("Path must be a string or a Path object.")
+    if not isinstance(path, (str, Path)):
+        raise TypeError("Path must be a string or a Path object.")
     file = f"{path}/{name}"
     return np.loadtxt(file, skiprows=skip)
 
@@ -28,7 +28,10 @@ def read_pandas_data(path, name):
     """
     import pandas as pd
 
-    file = path / name
+    if not isinstance(path, (str, Path)):
+        raise TypeError("Path must be a string or a Path object.")
+
+    file = f"{path}/{name}"
     return pd.read_csv(
         file, sep=r"\s+"
     )  # Using regex to handle whitespace as separator
