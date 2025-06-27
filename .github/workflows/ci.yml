@@ -35,3 +35,6 @@ jobs:
       run: |
         cd src
         flake8
+    - name: run tests
+      run: |
+        python -m pytest
