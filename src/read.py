@@ -9,7 +9,7 @@ def read_nump_data(path, name, skip=1):
     """
     import numpy as np
 
-    file = path / name
+    file = f"{path}/{name}"
     return np.loadtxt(file, skiprows=skip)
 
 
